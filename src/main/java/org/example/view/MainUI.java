@@ -11,6 +11,7 @@ public class MainUI extends JFrame{
     private final GestoreCollezione gestore = GestoreCollezione.getInstance();
     private final TabellaFilm modelloTabella;
     private final JTable tabella;
+    private final PannelloRicerca pannelloRicerca;
     public MainUI(){
         super("Gestore Film");
         modelloTabella = new TabellaFilm(gestore.getTutti());
@@ -22,12 +23,16 @@ public class MainUI extends JFrame{
         JPanel toolbar = new JPanel();
         toolbar.add(bottoneAggiungi);
         toolbar.add(bottoneRimuovi);
+        pannelloRicerca = new PannelloRicerca(modelloTabella);
 
+        JPanel pannelloSuperiore = new JPanel(new BorderLayout());
+        pannelloSuperiore.add(toolbar, BorderLayout.NORTH);
+        pannelloSuperiore.add(pannelloRicerca, BorderLayout.SOUTH);
         setLayout(new BorderLayout());
-        add(toolbar, BorderLayout.NORTH);
+        add(pannelloSuperiore, BorderLayout.NORTH);
         add(new JScrollPane(tabella), BorderLayout.CENTER);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(800,500);
+        setSize(1000,500);
         setLocationRelativeTo(null);
         
     }
