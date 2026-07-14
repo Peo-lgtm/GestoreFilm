@@ -1,0 +1,33 @@
+[ {
+  "id" : "411d06fa-c14e-41db-91fd-32b841e7b012",
+  "titolo" : "Oppenheimer",
+  "regista" : "Christopher Nolan",
+  "anno" : 2023,
+  "genere" : "Dramma",
+  "valutazione" : 4,
+  "statoVisione" : "In_visione"
+}, {
+  "id" : "1091fa0d-0104-4c6e-ad84-222b6d3e2543",
+  "titolo" : "Dune 2",
+  "regista" : "Denis Villeneuve",
+  "anno" : 2024,
+  "genere" : "Fantascienza",
+  "valutazione" : 1,
+  "statoVisione" : "Da_vedere"
+}, {
+  "id" : "e95b2bfe-07dd-4efc-8a06-5ae47e1f9619",
+  "titolo" : "Interstellar",
+  "regista" : "Christopher Nolan",
+  "anno" : 2014,
+  "genere" : "Fantascienza",
+  "valutazione" : 4,
+  "statoVisione" : "Visto"
+}, {
+  "id" : "a4d32818-bc8c-43dd-a4fd-0823caf46406",
+  "titolo" : "Il Gladiatore",
+  "regista" : "Ridley Scott",
+  "anno" : 2000,
+  "genere" : "Azione",
+  "valutazione" : 4,
+  "statoVisione" : "Visto"
+} ]
